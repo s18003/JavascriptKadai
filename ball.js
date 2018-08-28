@@ -1,3 +1,4 @@
+
 class Ball {
     static get ANGLE360() {
         return 6.283185307179586;
@@ -100,10 +101,6 @@ class Ball {
         if (this.y - this.radius < 0) {
             this.y -= this.y - this.radius;
             this.vy = -this.vy;
-        }
-        if (this.y - this.radius > WINDOW_HEIGHT) {
-            this.y = 400;
-            this.x = 300;
         }
         // 左の壁の跳ね返りチェック
         if (this.x - this.radius < 0) {

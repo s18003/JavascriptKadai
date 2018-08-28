@@ -24,25 +24,7 @@ class Block {
         ctx.fill();
 
         ctx.restore();
-
-        ctx.closePath();
-
-        ctx.beginPath();
-        ctx.moveTo(this.half_width * 2, 0);
-        ctx.lineTo(this.half_width * 2, this.half_height * 2);
-        ctx.lineTo(-this.half_width * 2, this.half_height * 2);
-        ctx.lineTo(-this.half_width * 2, -this.half_height * 2);
-        ctx.lineTo(this.half_width * 2, -this.half_height * 2);
-        ctx.closePath();
-
-        ctx.fillStyle = this.color;
-        ctx.fill();
-
-        ctx.restore();
-
     }
-
-
 
     collide(ball) {
         let result = true;
